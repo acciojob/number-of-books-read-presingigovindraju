@@ -16,9 +16,13 @@ const library = [
   },
 ];
 
-const numberOfBooksRead = () => {
-  // write your code here
-};
+// const numberOfBooksRead = () => {
+//   // write your code here
+// };
+let  numberOfBooksRead = 0;
+library.map((library)=>{
+	if(library.readingStatus) numberOfBooksRead++;
+});
 
 // Do not change the code below
 
